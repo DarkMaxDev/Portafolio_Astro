@@ -1,0 +1,40 @@
+---
+import '../components/Footer.css';
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer-grid">
+    
+    <!-- Columna 1: Branding -->
+    <div class="footer-column brand">
+      <h2>MiPortafolio</h2>
+      <p>Diseño y desarrollo de interfaces modernas con un enfoque en la elegancia y la funcionalidad</p>
+    </div>
+
+    <!-- Columna 2: Navegación -->
+    <div class="footer-column">
+      <h3>Mapa del sitio</h3>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#descripcion">Descripción</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Contacto -->
+    <div class="footer-column">
+      <h3>Contacto</h3>
+      <ul>
+        <li><a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Creado con Astro</p>
+  </div>
+</footer>

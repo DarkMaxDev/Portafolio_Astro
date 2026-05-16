@@ -1,0 +1,33 @@
+---
+// Desestructuramos las props que vienen desde el archivo donde mapeas los proyectos
+const { title, description, tags, image, href } = Astro.props;
+import './ProjectCard.css';
+---
+
+<article class="card">
+  <div class="image-container">
+    {/* 
+       Cambiamos el <div class="project-image"> por un <img> real.
+       Si "image" viene como "/fakestore.png", Astro lo buscará en public/fakestore.png automáticamente.
+    */}
+    <img 
+      src={image || "mifoto.png"} 
+      alt={title} 
+      class="project-image" 
+    />
+    
+    <div class="overlay">
+      <a href={href} class="view-link" target="_blank" rel="noopener noreferrer">
+        Ver Proyecto ↗
+      </a>
+    </div>
+  </div>
+  
+  <div class="info">
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <div class="tech-stack">
+      {tags.map((tag: string) => <span class="tag">{tag}</span>)}
+    </div>
+  </div>
+</article>

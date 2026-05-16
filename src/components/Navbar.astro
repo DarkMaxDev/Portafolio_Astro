@@ -1,0 +1,31 @@
+---
+import "./Navbar.css";
+const navLinks = [
+  { name: "Inicio", href: "#inicio" },
+  { name: "Descripcion", href: "#descripcion" },
+  { name: "Experiencia", href: "#experiencia" },
+  { name: "Habilidades", href: "#Skills" },
+  { name: "Proyectos", href: "#Proyectos" },
+  { name: "Contacto", href: "#contacto" },
+];
+---
+
+<header class="navbar">
+  <div class="nav-container">
+    <a href="#inicio" class="logo">
+      <span class="dot"></span> DarkMaxDev
+    </a>
+
+    <nav class="nav-menu">
+      <ul>
+        {navLinks.map(link => (
+          <li><a href={link.href}>{link.name}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="/CV_Maximiliano.pdf" class="btn-cv">Descargar CV</a>
+    </div>
+  </div>
+</header>

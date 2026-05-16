@@ -1,0 +1,56 @@
+---
+const skills = ["aws", "EM6", "javascript", "Mysql", "Excel","JavaScript","HTML","CSS"];
+const skills2 = ["React", "Astro", "VUE", "PHP", "Boostrap", "mysql", "CSS", "HTML"];
+const skills3 = ["MongoDB", "VUE", "Node.js", "Express", "Bootstrap","CSS","HTML","JavaScript"];
+import './Experience.css';
+---
+<section id="experiencia" class="section">
+  <h2>Experiencia y Skills</h2>
+  
+  <div class="content">
+    <div class="jobs">
+      <div class="job">
+        <h3>BECARIO TRAINER EN PROGRAMACION| CERTIFICACION</h3>
+        <span>2026 - Presente</span>
+        <p>Lideré el desarrollo de plataformas escalables usando microservicios y manejo de certificaciones en aws.</p>
+      </div>
+    </div>
+    
+    <div class="skills-grid">
+      {skills.map(skill => (
+        <span class="skill-badge">{skill}</span>
+      ))}
+    </div>
+
+  </div>
+    <div class="content">
+    <div class="jobs">
+      <div class="job">
+        <h3>RESIDENCIAS PROFESIONALES | DESARROLLADOR FULL-STACK</h3>
+        <span>2024 - Presente</span>
+        <p>Desarrollo de proyectos, Conexión con bases de datos, Diseño para usuarios mediante frameworks.</p>
+      </div>
+    </div>
+     <div class="skills-grid">
+      {skills2.map(skill => (
+        <span class="skill-badge">{skill}</span>
+      ))}
+    </div>
+
+    </div>
+    <div class="content">
+    <div class="jobs">
+      <div class="job">
+        <h3>PROYECTO DE TITULACION| E-COMMERCE FULL-STACK</h3>
+        <span>2024 - Presente</span>
+        <p>Creación de entorno profesional para la interactividad del usuario mediante Vue y Bootstrap.</p>
+      </div>
+    </div>
+     <div class="skills-grid">
+      {skills3.map(skill => (
+        <span class="skill-badge">{skill}</span>
+      ))}
+    </div>
+    
+</section>
+

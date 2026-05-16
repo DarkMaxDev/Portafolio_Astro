@@ -1,0 +1,51 @@
+---
+import "./Descripcion.css";
+
+const stats = [
+    { label: "Años de experiencia", value: "2+" },
+    { label: "Proyectos completados", value: "6+" },
+    { label: "Colaboraciones", value: "0" }
+];
+---
+
+<section id="descripcion" class="about-section">
+  <div class="container">
+    <div class="visual-content">
+     <div class="image-wrapper">
+        <img 
+          src="/mifoto.png" 
+          alt="Foto de perfil" 
+          class="profile-img" 
+        />
+        <div class="experience-badge">
+          <span class="number">2026</span>
+          <span class="text">Año Actual</span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="text-content">
+      <span class="subtitle">Sobre mí</span>
+      <h2>Transformando tus ideas en <span class="highlight">soluciones digitales</span></h2>
+      <p>
+        Soy un desarrollador apasionado por las tecnologías del futuro, 
+         <strong>Desarrollo productivo</strong> y
+        el <strong>Crecimiento Profesional</strong>
+      </p>
+      <p>
+        Mi meta principal es el desarrollo de habilidades para que en un futuro pueda crear mi propia empresa.
+      </p>
+      <div class="stats-grid">
+        {stats.map(stat => (
+          <div class="stat-item">
+            <span class="stat-value">{stat.value}</span>
+            <span class="stat-label">{stat.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>

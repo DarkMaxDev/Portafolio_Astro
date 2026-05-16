@@ -1,0 +1,11 @@
+  .section { padding: 5rem 2rem; max-width: 900px; margin: 0 auto; }
+  .content { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .skill-badge {
+    background: #1e293b;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin: 0.3rem;
+    display: inline-block;
+    border: 1px solid #334155;
+  }
+  @media (max-width: 768px) { .content { grid-template-columns: 1fr; } }

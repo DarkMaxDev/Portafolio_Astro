@@ -1,0 +1,25 @@
+---
+import ProjectCard from './ProjectCard.astro';
+import './Proyectos.css';
+
+const myProjects = [
+  { title: "AnimeWeb Full-Stack", description: "Pagina de Anime FullStack de streaming de anime.", tags: ["MongoDB", "Reactjs","Express","Node.js"], image: "/Animeweb.png", href:"https://frontend-anime-web.vercel.app/" },
+  { title: "Plataforma de productos", description: "Consumo de api_Fakestore.", tags: ["express", "React"], image: "/fakestore.png", href:"https://fakestoremax.netlify.app/" },
+  { title: "Landing Page DarkSeries", description: "Plataforma sencilla que muestra la cartelera de series anime..", tags: ["CSS", "JavaScript", "HTML"], image: "/DarkSeries.png", href:"https://anime-dark-rho.vercel.app/" },
+  { title: "Landing Page Wutherin Waves", description: "Un sitio web responsive basado en el videojuego wuthering waves.", tags: ["Next.js", "Stripe"], image: "/wuwa.png", href:"https://wuthering-waves-eta.vercel.app/" },
+  { title: "Landing Page Casa City", description: "Un sitio web responsive de venta de casas.", tags: ["Next.js", "React","CSS","HTML","JavaScript"], image: "/Casacity.png", href:"https://homemaster-olive.vercel.app/" },
+  { title: "Landing Page Crustaceo", description: "Un sitio web estatico que se enfoca en la promocion de comida rapida basado en el restaurante de la serie animada de bob esponja el crustaceo cascarudo.", tags: ["HTML", "CSS","JavaScript"], image: "/crustaceo.png", href:"https://crustaceo.onrender.com/" },
+];
+---
+
+<section class="portfolio" id="Proyectos">
+  <h2>Proyectos Seleccionados</h2>
+  
+  <div class="scroll-container">
+    <div class="grid-layout">
+      {myProjects.map(p => (
+        <ProjectCard {...p} />
+      ))}
+    </div>
+  </div>
+</section>
